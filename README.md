@@ -1,14 +1,16 @@
 # markdown-nomnoml README
 
+[![](https://vsmarketplacebadge.apphb.com/version/amoosbr.markdown-nomnoml.svg)](https://vsmarketplacebadge.apphb.com/version/amoosbr.markdown-nomnoml.svg)
+
 This extension adds nomnoml uml diagram support to Visual Studio Code's built-in Markdown preview.
 Nomnoml provides a way for drawing UML diagrams based on a simple syntax.
 You can get a quick overview and play with nomnoml on the [nomnoml.com](http://nomnoml.com/) website.
 
 This extension was made possible by the following projects:
 
-* [nomnoml](https://github.com/skanaar/nomnoml) for the awesome uml diagram support
-* [markdown-it-nomnoml](https://github.com/tonykero/markdown-it-nomnoml) as basis for the modified markdown-it plugin code used in this extension
-* [vscode-nomnoml](https://github.com/doctorrustynelson/vscode-nomnoml) for the background color setting.
+* [nomnoml](https://github.com/skanaar/nomnoml) ([MIT](https://github.com/skanaar/nomnoml/blob/master/LICENSE)) for the awesome uml diagram support
+* [markdown-it-nomnoml](https://github.com/tonykero/markdown-it-nomnoml) ([MIT](https://github.com/tonykero/markdown-it-nomnoml/blob/master/LICENSE)) as basis for the modified markdown-it plugin code used in this extension
+* [vscode-nomnoml](https://github.com/doctorrustynelson/vscode-nomnoml) ([MIT](https://github.com/doctorrustynelson/vscode-nomnoml/blob/master/LICENSE)) for the background color setting.
 
 ## Features
 
