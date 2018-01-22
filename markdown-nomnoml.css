@@ -1,0 +1,7 @@
+.vscode-dark .markdown-nomnoml svg, .vscode-high-contrast .markdown-nomnoml svg {
+    background-color: #FDF6E6;
+}
+
+/* .vscode-dark .markdown-nomnoml svg text, .vscode-high-contrast .markdown-nomnoml svg text {
+    fill: red;
+} */

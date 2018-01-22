@@ -1,0 +1,69 @@
+{
+    "name": "markdown-nomnoml",
+    "displayName": "Markdown Nomnoml Support",
+    "version": "0.0.1",
+    "description": "Adds nomnoml support to VS Code's builtin markdown preview",
+    "keywords": [
+        "nomnoml",
+        "markdown",
+        "uml",
+        "diagram",
+        "class"
+    ],
+    "publisher": "amoosbr",
+    "repository": {
+        "url": "https://github.com/amoosbr/vscode-markdown-nomnoml.git"
+    },
+    "bugs": {
+        "url": "https://github.com/amoosbr/vscode-markdown-nomnoml/issues"
+    },
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./extension.js",
+    "contributes": {
+        "markdown.previewStyles": [
+            "./markdown-nomnoml.css"
+        ],
+        "markdown.markdownItPlugins": true,
+        "configuration": {
+            "type": "object",
+            "title": "markdown-nomnoml configuration",
+            "properties": {
+                "markdown-nomnoml.style.defaultBackgroundColor": {
+                    "type": "string",
+                    "default": null,
+                    "description": "default background color for nomnoml diagrams. examples '#fff' or 'transparent'"
+                },
+                "markdown-nomnoml.style.defaultStrokeAndTextColor": {
+                    "type": "string",
+                    "default": null,
+                    "description": "default stroke and text color for nomnoml diagrams. examples '#fff' or 'red'"
+                },
+                "markdown-nomnoml.style.defaultShapeColor": {
+                    "type": "string",
+                    "default": null,
+                    "description": "default shape and inner shape color for nomnoml diagrams. examples 'blue', '#fff; #000'"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^1.1.6"
+    },
+    "dependencies": {
+        "d3-node": "^1.1.1",
+        "markdown-it": "^8.4.0",
+        "markdown-it-fence": "0.0.2",
+        "nomnoml": "^0.1.1",
+        "xmldom": "^0.1.27"
+    }
+}
