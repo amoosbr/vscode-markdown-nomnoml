@@ -10,6 +10,7 @@ This extension was made possible by the following projects:
 
 * [nomnoml](https://github.com/skanaar/nomnoml) ([MIT](https://github.com/skanaar/nomnoml/blob/master/LICENSE)) for the awesome uml diagram support
 * [markdown-it-nomnoml](https://github.com/tonykero/markdown-it-nomnoml) ([MIT](https://github.com/tonykero/markdown-it-nomnoml/blob/master/LICENSE)) as basis for the modified markdown-it plugin code used in this extension
+* [markdown-it-fence](https://github.com/geekplux/markdown-it-fence) ([MIT](https://github.com/geekplux/markdown-it-fence/blob/master/LICENSE)) to easily add a custom markdown-it code fence plugin
 * [vscode-nomnoml](https://github.com/doctorrustynelson/vscode-nomnoml) ([MIT](https://github.com/doctorrustynelson/vscode-nomnoml/blob/master/LICENSE)) for the background color setting.
 
 ## Features

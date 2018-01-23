@@ -1,4 +1,5 @@
-const mdf       = require('markdown-it-fence');
+// const mdf       = require('markdown-it-fence');
+const mdf       = require('./markdown-it-fence.js');
 const nomnoml   = require('nomnoml');
 const dom_parser = require('xmldom').DOMParser;
 const xml_serializer = require('xmldom').XMLSerializer;
@@ -64,7 +65,6 @@ const render = function(options) {
 
             html_svg = `<div class="markdown-nomnoml">${html_svg}</div>`
 
-
         }
         catch(err) {
             html_svg = '<pre><code class="language-nomnoml">\n' +
@@ -78,7 +78,6 @@ const render = function(options) {
 
 module.exports = function(md, options) {
     return mdf(md, 'nomnoml', {
-        marker: '`',
         render: render(options)
     });
 }
