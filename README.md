@@ -177,6 +177,10 @@ This list might be inconclusive.
 
 ## Release Notes
 
+## 0.0.2
+
+Two defects related to markdown preview fixed.
+
 ### 0.0.1
 
 Initial release of markdown-nomnoml adding nomnoml uml diagram support to VS Code's built-in markdown preview. Supporting custom default background, stroke, shape, and text colors.
