@@ -1,5 +1,4 @@
-// const mdf       = require('markdown-it-fence');
-const mdf       = require('./markdown-it-fence.js');
+const mdf       = require('@kaishuu0123/markdown-it-fence');
 const nomnoml   = require('nomnoml');
 const dom_parser = require('xmldom').DOMParser;
 const xml_serializer = require('xmldom').XMLSerializer;
