@@ -4,6 +4,13 @@
 
 ## [Unreleased]
 
+## [0.0.3] - 2020-10-23
+
+  * Support nomnoml tables
+  * Support weightless edges
+  * Support `gravity`, `acyclicer` and `ranker` directives
+  * Support all documented modifiers (`bold, underline, italic, dashed, empty`)
+
 ## [0.0.2] - 2018-01-23
 
   * Two defects related to markdown preview fixed

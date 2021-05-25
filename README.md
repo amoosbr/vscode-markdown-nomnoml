@@ -86,6 +86,8 @@ nomnoml syntax documentation copied from [nomnoml README](https://github.com/ska
     o->  aggregation
     --   note
     -/-  hidden
+    _>   weightless edge
+    __   weightless dashed edge
 
 ### Classifier Types
 
@@ -109,6 +111,7 @@ nomnoml syntax documentation copied from [nomnoml README](https://github.com/ska
     [<usecase> name]
     [<label> name]
     [<hidden> name]
+    [<table> name| a | 5 || b | 7]
 
 ### Directives
 
@@ -117,7 +120,9 @@ nomnoml syntax documentation copied from [nomnoml README](https://github.com/ska
     #direction: down | right
     #gutter: 5
     #edgeMargin: 0
+    #gravity: 1
     #edges: hard | rounded
+    #background: transparent
     #fill: #eee8d5; #fdf6e3
     #fillArrows: false
     #font: Calibri
@@ -129,17 +134,29 @@ nomnoml syntax documentation copied from [nomnoml README](https://github.com/ska
     #stroke: #33322E
     #title: filename
     #zoom: 1
+    #acyclicer: greedy
+    #ranker: network-simplex | tight-tree | longest-path
 
 ### Custom Classifier Styles
 
-A directive that starts with "." define a classifier style.
+A directive that starts with "." define a classifier style. The style is written as a space separated list of modifiers and key/value pairs.
 
-    #.box: fill=#88ff88
-    #.blob: fill=pink visual=ellipse
+    #.box: fill=#8f8 dashed
+    #.blob: visual=ellipse
     [<box> GreenBox]
     [<blob> HideousBlob]
 
-Available visuals are
+Available key/value pairs are
+
+    fill=(any css color)
+
+    stroke=(any css color)
+
+    align=center
+    align=left
+
+    direction=right
+    direction=down
 
     visual=actor
     visual=class
@@ -157,25 +174,27 @@ Available visuals are
     visual=roundrect
     visual=sender
     visual=start
+    visual=table
     visual=transceiver
 
-## Known Issues
+Available modifiers are
 
-### Unsupported Custom Classifier Styles
-
-The nomnoml svg renderer used by the extension doesn't support all of the custom classifier styles.\
-Unsupported modifiers are
-
-    center
     bold
     underline
     italic
     dashed
     empty
 
-This list might be inconclusive.
+
+## Known Issues
+
+* The `import` directive doesn't seem to work
 
 ## Release Notes
+
+## 0.0.3
+
+Support nomnoml tables, weightless edges, `gravity`, `acyclicer` and `ranker` directives. Support all documented modifiers (`bold, underline, italic, dashed, empty`).
 
 ## 0.0.2
 

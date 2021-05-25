@@ -1,7 +1,7 @@
 {
     "name": "markdown-nomnoml",
     "displayName": "Markdown Nomnoml Support",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Adds nomnoml support to VS Code's builtin markdown preview",
     "keywords": [
         "nomnoml",
@@ -60,9 +60,9 @@
         "vscode": "^1.1.6"
     },
     "dependencies": {
-        "d3-node": "^1.1.1",
+        "d3-node": "^1.1.3",
         "markdown-it": "^8.4.0",
-        "nomnoml": "^0.1.1",
+        "nomnoml": "^1.2.0",
         "xmldom": "^0.1.27"
     }
 }

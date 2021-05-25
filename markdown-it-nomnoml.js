@@ -55,7 +55,8 @@ const render = function(options) {
                 if (strokeColor != null) {
                     let text_elements = svgDoc.getElementsByTagName("text");
                     for (let i = 0; i < text_elements.length; i++) {
-                        text_elements[i].setAttribute('style', `fill: ${strokeColor};`);
+                        const text_style = text_elements[i].getAttribute('style')
+                        text_elements[i].setAttribute('style', `fill: ${strokeColor};${text_style}`);
                     }
                 }
 
